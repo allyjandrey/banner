@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    min-height: 100vh;
+}
+
+.banner {
+    width: 901px;
+    height: 348px;
+
+    background: #C4C4C4;
+    border-radius: 30px;
+}
+
+.carrossel {
+    display: inline-flex;
+    box-shadow: 2px 2px 4px #000000;
+    overflow: hidden;
+    width: 901px;
+    height: 348px;
+    border-radius: 30px;
+}
+
+.container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+img {
+    object-fit: cover;
+    width: 901px;
+    height: 348px;
+}

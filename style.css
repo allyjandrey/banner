@@ -10,6 +10,11 @@ body {
     min-height: 100vh;
 }
 
+.arrumarImagem {
+    width: 901px;
+    height: 348px;
+}
+
 .banner {
     width: 901px;
     height: 348px;

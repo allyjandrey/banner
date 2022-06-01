@@ -1,56 +1,89 @@
 * {
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    transition: background 0.4s ease-in-out;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
 }
 
 .carrossel-container {
+    width: 1024px;
+    height: 576px;
     overflow: hidden;
-    position: relative;
-    width: 50vw;
-    height: 80vh;
-    margin-top: 1rem;
-    border-radius: 30px;
+    border-radius: 15px;
+    transition: all 0.4s;
 }
 
 .carrossel {
+    width: 5120px;
     display: flex;
-    position: absolute;
-    left: 0;
-    top: 0;
-    transform: translateX(0);
-    transition: tranform 0.4s ease-in-out;
 }
 
-.slide {
-    width: 100vh;
+.imagens img {
+    width: 1024px;
+    height: 576px;
+}
+
+#atual {
+    transition: all 2s;
+}
+
+.botoes {
+    position: absolute;
+    color: #FFFFFF;
+    padding: 10px;
     text-align: center;
-}
-
-.slide img {
-    object-fit: cover;
-    height: 380px;
-    width: 600px;
-}
-
-.setas {
-    background-color: transparent;
-    border: 0;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    margin-top: -5px ;
+}
+
+.botoes :hover{
+    transform: scale(1.5);
+    transition-delay: 5ms;
+}
+
+#voltar {
+    top: 50%;
+    left: 10%;
+}
+
+#avancar {
+    top: 50%;
+    right: 10%;
+}
+
+.pontos {
     position: absolute;
-    top:30%;
-    transform: translateY(-50%);
-    font-size: 3rem;
-    opacity: 0.8;
+    width: 1024px;
+    display: flex;
+    justify-content: center;
+    margin-top: -45px;
 }
 
-.seta-esquerda {
-    left: 2rem;
+.pontos div {
+    transition: all 0.5s;
+    border: 3px solid #FFFFFF;
+    padding: 6px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
 }
 
-.seta-direita {
-    right: 2rem;
+.pontos div:hover {
+    background-color: #FFFFFF;
+}
+
+.imagemAtual {
+    transition: all 0.5s;
+    background-color: #FFFFFF;
 }

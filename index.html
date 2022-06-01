@@ -5,28 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banner carrossel</title>
+    <script src="https://kit.fontawesome.com/269858b86d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <script src="banner.js" defer></script>
 </head>
 <body>
     <div class="carrossel-container">
         <div class="carrossel" id="carrossel">
-            <div class="slide">
+
+            <div class="botoes" id="avancar">
+                <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="botoes" id="voltar">
+                <i class="fas fa-chevron-left"></i>
+            </div>
+
+            <div class="imagens" id="atual">
                 <img src="img/pubg.jfif" alt="pubg">
             </div>
-            <div class="slide">
+            <div class="imagens">
                 <img src="img/fortnite.jfif" alt="fortnite">
             </div>
-            <div class="slide">
+            <div class="imagens">
                 <img src="img/minecraft.jfif" alt="minecraft">
             </div>
         </div>
-        <button class="seta-esquerda setas" id="esquerda">
-            &leftarrow;
-        </button>
-        <button class="seta-direita setas" id="direita">
-            &rightarrow;
-        </button>
+        <div class="pontos">
+            <div class="imagemAtual" id="0"></div>
+            <div id="1"></div>
+            <div id="2"></div>
+            <div id="3"></div>
+        </div>
     </div>
 </body>
 </html>

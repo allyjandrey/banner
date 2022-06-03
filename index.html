@@ -4,38 +4,53 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Banner carrossel</title>
-    <script src="https://kit.fontawesome.com/269858b86d.js" crossorigin="anonymous"></script>
+    <title>Banner Slider</title>
     <link rel="stylesheet" href="style.css">
-    <script src="banner.js" defer></script>
 </head>
 <body>
-    <div class="carrossel-container">
-        <div class="carrossel" id="carrossel">
+    <div class="slider">
+        <div class="slides">
+            <!--Botôes Radio-->
+            <input type="radio" name="radio-btn" id="radio1">
+            <input type="radio" name="radio-btn" id="radio2">
+            <input type="radio" name="radio-btn" id="radio3">
+            <input type="radio" name="radio-btn" id="radio4">
+             <!--Fim Botôes Radio-->
 
-            <div class="botoes" id="avancar">
-                <i class="fas fa-chevron-right"></i>
+             <!--Slide images-->
+             <div class="slide first">
+                 <img src="img/0.jfif" alt="PUBG">
+             </div>
+             <div class="slide">
+                <img src="img/1.jfif" alt="fortnite">
             </div>
-            <div class="botoes" id="voltar">
-                <i class="fas fa-chevron-left"></i>
+            <div class="slide">
+                <img src="img/2.jfif" alt="minecraft">
             </div>
+            <div class="slide">
+                <img src="img/3.jfif" alt="apex">
+            </div>
+            <!--Fim Slide images-->
 
-            <div class="imagens" id="atual">
-                <img src="img/pubg.jfif" alt="pubg">
+            <!--Navegação automática-->
+            <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+                <div class="auto-btn4"></div>
             </div>
-            <div class="imagens">
-                <img src="img/fortnite.jfif" alt="fortnite">
-            </div>
-            <div class="imagens">
-                <img src="img/minecraft.jfif" alt="minecraft">
-            </div>
+            <!--Fim Navegação automática-->
         </div>
-        <div class="pontos">
-            <div class="imagemAtual" id="0"></div>
-            <div id="1"></div>
-            <div id="2"></div>
-            <div id="3"></div>
+
+        <!--Navegação Manual-->
+        <div class="manual-navigation">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
         </div>
+        <!--Fim Navegação Manual-->
     </div>
 </body>
+<script src="banner.js"></script>
 </html>
